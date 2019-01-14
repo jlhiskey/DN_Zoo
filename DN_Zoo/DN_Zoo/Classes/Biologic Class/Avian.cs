@@ -4,7 +4,10 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Biologic_Class
 {
-    class Avian
+    public abstract class Avian : BiologicClass
     {
+        public override string ClassType { get; set; } = "Avian";
+
+        public abstract bool CanFly { get; set; }
     }
 }
