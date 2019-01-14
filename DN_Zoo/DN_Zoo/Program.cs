@@ -11,7 +11,13 @@ namespace DN_Zoo
             HouseCat gregor = new HouseCat();
             gregor.AnimalName = "Gregor";
             gregor.Age = 5;
-           
+            Console.WriteLine(gregor.AmIAlive());
+            Console.WriteLine(gregor.WhatClassAmI());
+            Console.WriteLine(gregor.WhatIsMySubtype());
+            Console.WriteLine(gregor.Speak());
+
+
+            Console.ReadLine();
         }
     }
 }

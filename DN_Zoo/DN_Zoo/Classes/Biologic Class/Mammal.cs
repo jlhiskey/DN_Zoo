@@ -9,5 +9,10 @@ namespace DN_Zoo.Classes.Biologic_Class
         public override string ClassType { get; set; } = "Mammal";
         
         public abstract bool HasRetractableClaws { get; set; }
+
+        public virtual string WhatClassAmI()
+        {
+            return "I am a Mammal.";
+        }
     }
 }

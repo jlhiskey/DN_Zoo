@@ -9,7 +9,11 @@ namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
     {
         public override bool HasRetractableClaws { get; set; } = true;
 
-        public abstract bool CanBeDomesticated { get; set; } 
+        public abstract bool CanBeDomesticated { get; set; }
 
+        public virtual string WhatIsMySubtype()
+        {
+            return "I am a Feline.";
+        }
     }
 }
