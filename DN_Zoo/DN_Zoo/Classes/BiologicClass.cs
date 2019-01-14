@@ -6,5 +6,8 @@ namespace DN_Zoo.Classes
 {
     class BiologicClass
     {
+        public string Class { get; set; }
+
+        
     }
 }

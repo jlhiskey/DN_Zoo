@@ -6,5 +6,6 @@ namespace DN_Zoo.Classes
 {
     class FoodTypes
     {
+
     }
 }
