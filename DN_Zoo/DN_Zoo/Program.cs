@@ -23,7 +23,17 @@ namespace DN_Zoo
             horse.BiologicClass = mammal;
             horse.Food = hay;
             horse.Medications = mammalAntibiotic;
-            
+
+            Zoo woodlandPark = new Zoo();
+            woodlandPark.Name = "Woodland Park";
+            woodlandPark.MaxAnimalCapacity = 5;
+            woodlandPark.AddAnimal(horse);
+            woodlandPark.AddAnimal(horse);
+            woodlandPark.AddAnimal(horse);
+            woodlandPark.AddAnimal(horse);
+            woodlandPark.AddAnimal(horse);
+            woodlandPark.AddAnimal(horse);
+
         }
     }
 }
