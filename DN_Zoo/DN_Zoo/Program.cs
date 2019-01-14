@@ -7,7 +7,23 @@ namespace DN_Zoo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BiologicClass mammal = new BiologicClass();
+            mammal.Name = "Mammal";
+
+            Food hay = new Food();
+            hay.Name = "Hay";
+            hay.Type = "Vegetarian";
+
+            Medication mammalAntibiotic = new Medication();
+            mammalAntibiotic.Name = "Mammal Antibiotic";
+            mammalAntibiotic.BiologicClassRestrictions = mammal;
+
+            Animal horse = new Animal();
+            horse.Name = "Shadow Fax";
+            horse.BiologicClass = mammal;
+            horse.Food = hay;
+            horse.Medications = mammalAntibiotic;
+            
         }
     }
 }

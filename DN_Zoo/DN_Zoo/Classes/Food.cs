@@ -4,7 +4,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes
 {
-    class Medications
+    class Food
     {
+        public string Name { get; set; }
+        public string Type { get; set; }
     }
 }

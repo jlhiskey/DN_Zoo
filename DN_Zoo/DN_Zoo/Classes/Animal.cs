@@ -7,9 +7,9 @@ namespace DN_Zoo.Classes
     class Animal
     {
         public string Name { get; set; }
-        public string BiologicClass { get; set; }
-        public string FoodTypes { get; set; }
-        public string Medications { get; set; }
+        public object BiologicClass { get; set; }
+        public object Food { get; set; }
+        public object Medications { get; set; }
 
         // Build new animal
     }
