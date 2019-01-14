@@ -11,5 +11,10 @@ namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
 
         public abstract bool Raptor { get; set; }
 
+        public virtual string WhatIsMySubtype()
+        {
+            return "I can fly.";
+        }
+
     }
 }

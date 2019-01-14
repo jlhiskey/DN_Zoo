@@ -14,7 +14,7 @@ namespace DN_Zoo
             Console.WriteLine(gregor.AmIAlive());
             Console.WriteLine(gregor.WhatClassAmI());
             Console.WriteLine(gregor.WhatIsMySubtype());
-            Console.WriteLine(gregor.Speak());
+            Console.WriteLine(gregor.AnimalType());
 
 
             Console.ReadLine();

@@ -15,6 +15,11 @@ namespace DN_Zoo.Classes.Animals
 
         public override bool HasLegs { get; set; } = false;
 
+        public virtual string AnimalType()
+        {
+            return $"I am a {SpeciesName}.";
+        }
+
 
     }
 }

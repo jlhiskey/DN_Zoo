@@ -14,5 +14,10 @@ namespace DN_Zoo.Classes.Animals
         public override int Age { get; set; }
 
         public override bool CanJump { get; set; } = true;
+
+        public virtual string AnimalType()
+        {
+            return $"I am a {SpeciesName}.";
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace DN_Zoo.Classes.Biologic_Class
 
         public virtual string WhatClassAmI()
         {
-            return "I am a Mammal.";
+            return $"I am a {ClassType}.";
         }
     }
 }

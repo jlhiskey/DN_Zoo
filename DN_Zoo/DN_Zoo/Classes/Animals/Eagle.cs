@@ -15,6 +15,9 @@ namespace DN_Zoo.Classes.Animals
 
         public override bool Raptor { get; set; } = true;
 
-
+        public virtual string AnimalType()
+        {
+            return $"I am a {SpeciesName}.";
+        }
     }
 }

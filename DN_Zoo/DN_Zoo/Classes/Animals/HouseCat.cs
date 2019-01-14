@@ -15,9 +15,9 @@ namespace DN_Zoo.Classes.Animals
 
         public override bool CanBeDomesticated { get; set; } = true;
 
-        public virtual string Speak()
+        public virtual string AnimalType()
         {
-            return "I am a House Cat.";
+            return $"I am a {SpeciesName}.";
         }
 
     }

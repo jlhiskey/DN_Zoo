@@ -11,5 +11,10 @@ namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
 
         public abstract bool CanBeDomesticated { get; set; }
 
+        public virtual string WhatIsMySubtype()
+        {
+            return "I am a Canine.";
+        }
+
     }
 }

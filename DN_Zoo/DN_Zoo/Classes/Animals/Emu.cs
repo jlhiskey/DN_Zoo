@@ -15,6 +15,9 @@ namespace DN_Zoo.Classes.Animals
 
         public override bool IsBlackAndWhite { get; set; } = false;
 
-
+        public virtual string AnimalType()
+        {
+            return $"I am a {SpeciesName}.";
+        }
     }
 }
