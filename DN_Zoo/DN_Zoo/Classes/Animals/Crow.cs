@@ -5,14 +5,16 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
-    class Salamander : Amphibian
+    class Crow : Flying
     {
-        public override string SpeciesName { get; set; } = "Salamander";
+        public override string SpeciesName { get; set; } = "Crow";
 
         public override string AnimalName { get; set; }
 
         public override int Age { get; set; }
 
-        public override bool CanJump { get; set; } = false;
+        public override bool Raptor { get; set; } = false;
+
+
     }
 }
