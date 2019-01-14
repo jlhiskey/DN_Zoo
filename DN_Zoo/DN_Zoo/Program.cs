@@ -1,5 +1,6 @@
 ﻿using System;
 using DN_Zoo.Classes;
+using DN_Zoo.Classes.Animals;
 
 namespace DN_Zoo
 {
@@ -7,33 +8,10 @@ namespace DN_Zoo
     {
         static void Main(string[] args)
         {
-            BiologicClass mammal = new BiologicClass();
-            mammal.Name = "Mammal";
-
-            Food hay = new Food();
-            hay.Name = "Hay";
-            hay.Type = "Vegetarian";
-
-            Medication mammalAntibiotic = new Medication();
-            mammalAntibiotic.Name = "Mammal Antibiotic";
-            mammalAntibiotic.BiologicClassRestrictions = mammal;
-
-            Animal horse = new Animal();
-            horse.Name = "Shadow Fax";
-            horse.BiologicClass = mammal;
-            horse.Food = hay;
-            horse.Medications = mammalAntibiotic;
-
-            Zoo woodlandPark = new Zoo();
-            woodlandPark.Name = "Woodland Park";
-            woodlandPark.MaxAnimalCapacity = 5;
-            woodlandPark.AddAnimal(horse);
-            woodlandPark.AddAnimal(horse);
-            woodlandPark.AddAnimal(horse);
-            woodlandPark.AddAnimal(horse);
-            woodlandPark.AddAnimal(horse);
-            woodlandPark.AddAnimal(horse);
-
+            HouseCat gregor = new HouseCat();
+            gregor.Name = "Gregor";
+            gregor.Age = 5;
+           
         }
     }
 }
