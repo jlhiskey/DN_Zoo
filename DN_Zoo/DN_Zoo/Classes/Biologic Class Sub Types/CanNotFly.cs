@@ -1,10 +1,15 @@
-﻿using System;
+﻿using DN_Zoo.Classes.Biologic_Class;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
 {
-    class CanNotFly
+    public abstract class NonFlying : Avian
     {
+        public override bool CanFly { get; set; } = false;
+
+        public abstract bool IsBlackAndWhite { get; set; }
+
     }
 }

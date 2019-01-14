@@ -7,7 +7,9 @@ namespace DN_Zoo.Classes.Animals
 {
     class HouseCat : Feline
     {
-        public override string Name { get; set; }
+        public override string SpeciesName { get; set; } = "HouseCat";
+
+        public override string AnimalName { get; set; }
 
         public override int Age { get; set; }
 

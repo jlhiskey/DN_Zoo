@@ -9,7 +9,7 @@ namespace DN_Zoo
         static void Main(string[] args)
         {
             HouseCat gregor = new HouseCat();
-            gregor.Name = "Gregor";
+            gregor.AnimalName = "Gregor";
             gregor.Age = 5;
            
         }
