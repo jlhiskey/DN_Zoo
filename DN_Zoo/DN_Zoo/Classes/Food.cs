@@ -4,7 +4,10 @@ using System.Text;
 
 namespace DN_Zoo.Classes
 {
-    class Food
+    /// <summary>
+    /// VIRTUAL Food class is used in the IEat interface.
+    /// </summary>
+    public class Food
     {
         public string Name { get; set; }
         public string Type { get; set; }

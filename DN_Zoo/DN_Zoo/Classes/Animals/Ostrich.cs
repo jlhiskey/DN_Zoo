@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
+    /// <summary>
+    /// CONCRETE Ostrich class inheretes the properties of the Sub Type NonFlying.
+    /// </summary>
     public class Ostrich : NonFlying
     {
         public override string SpeciesName { get; set; } = "Ostrich";

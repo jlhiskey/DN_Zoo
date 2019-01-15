@@ -4,6 +4,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes
 {
+    /// <summary>
+    /// VIRTUAL Medication is a unused class.
+    /// </summary>
     class Medication
     {
         public string Name { get; set; }

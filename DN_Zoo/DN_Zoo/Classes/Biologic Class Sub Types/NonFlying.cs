@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
 {
+    /// <summary>
+    /// ABSTRACT NonFlying class inheretes the properties of the Biologic Class Avian.
+    /// </summary>
     public abstract class NonFlying : Avian
     {
         public override bool CanFly { get; set; } = false;

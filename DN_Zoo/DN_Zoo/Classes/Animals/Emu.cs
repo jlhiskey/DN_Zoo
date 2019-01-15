@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
+    /// <summary>
+    /// CONCRETE Emu class inheretes the properties of the Sub Type NonFlying.
+    /// </summary>
     public class Emu : NonFlying
     {
         public override string SpeciesName { get; set; } = "Emu";

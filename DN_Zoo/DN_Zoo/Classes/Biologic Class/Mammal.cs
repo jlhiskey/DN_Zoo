@@ -4,6 +4,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Biologic_Class
 {
+    /// <summary>
+    /// ABSTRACT Avian class inheretes the properties of the Base Class Animal.
+    /// </summary>
     public abstract class Mammal : Animal
     {
         public override string ClassType { get; set; } = "Mammal";

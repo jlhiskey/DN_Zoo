@@ -21,6 +21,13 @@ namespace DN_Zoo
             woodlandPark.MaxAnimalCapacity = 5;
             woodlandPark.AddAnimal(gregor);
 
+            Wolf testWolf = new Wolf();
+            Food testFood = new Food()
+            {
+                Name = "testFood",
+                Type = "testType"
+            };
+            testWolf.Food = testFood;
             Console.ReadLine();
         }
     }
