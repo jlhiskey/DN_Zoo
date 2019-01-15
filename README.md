@@ -98,7 +98,7 @@ NOTE: You are not required to be scientifically correct with your animal names. 
 
     ## Zoo Diagram
 
-![flowchart image](flowchart.PNG)
+![flowchart image](Flowchart.PNG)
 
 ### Link to Zoo Diagram
     
