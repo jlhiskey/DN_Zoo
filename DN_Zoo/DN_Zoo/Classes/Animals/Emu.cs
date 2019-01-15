@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
-    class Emu : NonFlying
+    public class Emu : NonFlying
     {
         public override string SpeciesName { get; set; } = "Emu";
 

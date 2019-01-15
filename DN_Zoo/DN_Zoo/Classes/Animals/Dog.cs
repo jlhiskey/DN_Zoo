@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
-    class Dog : Canine
+    public class Dog : Canine
     {
         public override string SpeciesName { get; set; } = "Dog";
 
