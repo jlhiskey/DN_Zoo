@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Biologic_Class
 {
-    public abstract class Avian : BiologicClass
+    public abstract class Avian : Animal
     {
         public override string ClassType { get; set; } = "Avian";
 

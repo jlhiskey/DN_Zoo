@@ -16,6 +16,10 @@ namespace DN_Zoo
             Console.WriteLine(gregor.WhatIsMySubtype());
             Console.WriteLine(gregor.AnimalType());
 
+            Zoo woodlandPark = new Zoo();
+            woodlandPark.Name = "Woodland Park";
+            woodlandPark.MaxAnimalCapacity = 5;
+            woodlandPark.AddAnimal(gregor);
 
             Console.ReadLine();
         }

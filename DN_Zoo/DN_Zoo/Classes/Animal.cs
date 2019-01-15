@@ -4,13 +4,16 @@ using System.Text;
 
 namespace DN_Zoo.Classes
 {
-    class Animal
+    public abstract class Animal
     {
-        public string Name { get; set; }
-        public object BiologicClass { get; set; }
-        public object Food { get; set; }
-        public object Medications { get; set; }
+        public abstract string SpeciesName { get; set; }
+        public abstract string AnimalName { get; set; }
+        public abstract int Age { get; set; }
+        public abstract string ClassType { get; set; }
 
-        // Build new animal
+        public virtual string AmIAlive()
+        {
+            return "I am an animal.";
+        }
     }
 }

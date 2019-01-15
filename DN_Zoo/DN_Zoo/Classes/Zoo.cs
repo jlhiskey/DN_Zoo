@@ -38,6 +38,7 @@ namespace DN_Zoo.Classes
                 currentPopulation = currentPopulation + 1;
                 CurrentAnimals = currentAnimals;
                 CurrentPopulation = currentPopulation;
+
                 return currentAnimals[currentPopulation - 1];
             }
             else
