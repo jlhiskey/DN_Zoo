@@ -28,7 +28,6 @@ namespace DN_Zoo
                 Type = "testType"
             };
             testWolf.Food = testFood;
-
             Console.ReadLine();
         }
     }
