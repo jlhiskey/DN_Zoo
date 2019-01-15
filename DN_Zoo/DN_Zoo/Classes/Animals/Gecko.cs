@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
+    /// <summary>
+    /// CONCRETE Gecko class inheretes the properties of the Sub Type NonAmphibian.
+    /// </summary>
     public class Gecko : NonAmphibian
     {
         public override string SpeciesName { get; set; } = "Gecko";

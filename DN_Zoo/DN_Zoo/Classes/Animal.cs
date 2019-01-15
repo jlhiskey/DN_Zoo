@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes
 {
+    /// <summary>
+    /// BASE Animal class is the base class. It uses the interfaces IAlive and IEat
+    /// </summary>
     public abstract class Animal : IAlive, IEat
     {
         public abstract string SpeciesName { get; set; }

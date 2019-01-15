@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
+    /// <summary>
+    /// CONCRETE Salamander class inheretes the properties of the Sub Type Amphibian.
+    /// </summary>
     public class Salamander : Amphibian
     {
         public override string SpeciesName { get; set; } = "Salamander";

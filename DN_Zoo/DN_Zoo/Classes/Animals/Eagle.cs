@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
+    /// <summary>
+    /// CONCRETE Eagle class inheretes the properties of the Sub Type Flying.
+    /// </summary>
     public class Eagle : Flying
     {
         public override string SpeciesName { get; set; } = "Eagle";

@@ -97,5 +97,9 @@ NOTE: You are not required to be scientifically correct with your animal names. 
       - ex) imAWolf.Bite() = "Bite"     
 
     ## Zoo Diagram
+
+![flowchart image](flowchart.PNG)
+
+### Link to Zoo Diagram
     
-    https://1drv.ms/w/s!AuC1SlsAQi6yj9J43ElGyX-ux23Sfw
+ -   https://1drv.ms/w/s!AuC1SlsAQi6yj9J43ElGyX-ux23Sfw

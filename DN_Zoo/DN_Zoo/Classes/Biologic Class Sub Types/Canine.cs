@@ -6,6 +6,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
 {
+    /// <summary>
+    /// ABSTRACT Canine class inheretes the properties of the Biologic Class Mammal and uses the interfaces IBite and overrides default interface IEat.
+    /// </summary>
     public abstract class Canine : Mammal, IBite, IEat
     {
         public override bool HasRetractableClaws { get; set; } = false;

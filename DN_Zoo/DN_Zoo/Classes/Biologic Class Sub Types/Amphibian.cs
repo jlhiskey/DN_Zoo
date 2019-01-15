@@ -5,6 +5,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
 {
+    /// <summary>
+    /// ABSTRACT Amphibian class inheretes the properties of the Biologic Class Reptile.
+    /// </summary>
     public abstract class Amphibian : Reptile
     {
         public override bool CanSwim { get; set; } = true;

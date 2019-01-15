@@ -6,6 +6,9 @@ using System.Text;
 
 namespace DN_Zoo.Classes.Animals
 {
+    /// <summary>
+    /// CONCRETE Dog class inheretes the properties of the Sub Type Canine and uses the interface IBite.
+    /// </summary>
     public class Dog : Canine, IBite
     {
         public override string SpeciesName { get; set; } = "Dog";
