@@ -196,4 +196,109 @@ namespace ZooTest
             Assert.Equal("Reptile", gregor.ClassType);
         }
     }
+
+    public class TestingInterfaces
+    {
+        [Fact]
+        public void TestingIEatInterfaceDefaultFromBaseClass()
+        {
+            Gecko gregor = new Gecko();
+
+            Food expectedFood = new Food
+            {
+                Name = "Default Food",
+                Type = "Default Type"
+            };
+
+            string expectedFoodString = expectedFood.ToString();
+            string actualFoodString = gregor.Food.ToString();
+            
+
+            Assert.Equal(expectedFoodString, actualFoodString);
+        }
+
+        [Fact]
+        public void TestingIEatInterfaceDefaultFromCanineClass()
+        {
+            Dog gregor = new Dog();
+
+            Food expectedFood = new Food
+            {
+                Name = "Red Meat",
+                Type = "Carnivore"
+            };
+
+            string expectedFoodString = expectedFood.ToString();
+            string actualFoodString = gregor.Food.ToString();
+
+
+            Assert.Equal(expectedFoodString, actualFoodString);
+        }
+
+        [Fact]
+        public void TestingIEatInterfaceOverride()
+        {
+
+            Food expectedFood = new Food
+            {
+                Name = "Red Meat",
+                Type = "Carnivore"
+            };
+
+            Dog gregor = new Dog();
+
+            gregor.Food = expectedFood;
+
+            string expectedFoodString = expectedFood.ToString();
+            string actualFoodString = gregor.Food.ToString();
+
+
+            Assert.Equal(expectedFoodString, actualFoodString);
+        }
+
+        [Fact]
+        public void TestingIBiteFromCanine()
+        {
+            
+            Wolf gregor = new Wolf();
+
+            Assert.Equal("Bite", gregor.Bite());
+        }
+
+        [Fact]
+        public void TestingIBiteFromDog()
+        {
+
+            Dog gregor = new Dog();
+
+            Assert.Equal("Don't Bite", gregor.Bite());
+        }
+
+        [Fact]
+        public void TestingBaseClassInheritanceOfImAliveDog()
+        {
+
+            Dog gregor = new Dog();
+
+            Assert.Equal("Alive", gregor.Speak());
+        }
+
+        [Fact]
+        public void TestingBaseClassInheritanceOfImAliveSalamander()
+        {
+
+            Salamander gregor = new Salamander();
+
+            Assert.Equal("Alive", gregor.Speak());
+        }
+
+        [Fact]
+        public void TestingBaseClassInheritanceOfImAliveOstrich()
+        {
+
+            Ostrich gregor = new Ostrich();
+
+            Assert.Equal("Alive", gregor.Speak());
+        }
+    }
 }
