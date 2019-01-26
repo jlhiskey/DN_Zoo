@@ -19,5 +19,9 @@ namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
             return "I can fly.";
         }
 
+        public abstract string Sound();
+        
+        
+
     }
 }

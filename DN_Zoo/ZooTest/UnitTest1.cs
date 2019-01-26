@@ -300,5 +300,94 @@ namespace ZooTest
 
             Assert.Equal("Alive", gregor.Speak());
         }
+        
+        
+
     }
-}
+    public class AddedTests
+    {
+        [Fact]
+        public void TestingAbstractMethodSoundEagle()
+        {
+
+            Eagle gregor = new Eagle();
+
+            Assert.Equal("Ammeerriiccaaaa!!!!", gregor.Sound());
+        }
+
+        [Fact]
+        public void TestingAbstractMethodSoundCrow()
+        {
+
+            Crow gregor = new Crow();
+
+            Assert.Equal("Kaw Kaaaa", gregor.Sound());
+        }
+
+        [Fact]
+        public void TestingAbstractMethodWhatColorAmIEmu()
+        {
+
+            Emu gregor = new Emu();
+
+            Assert.Equal("I am brown", gregor.WhatColorAmI());
+        }
+
+        [Fact]
+        public void TestingAbstractMethodWhatColorAmIOstrich()
+        {
+
+            Ostrich gregor = new Ostrich();
+
+            Assert.Equal("I am black and white", gregor.WhatColorAmI());
+        }
+
+        [Fact]
+        public void TestingVirtualPropertyFoodDog()
+        {
+
+            Food expectedFood = new Food
+            {
+                Name = "Red Meat",
+                Type = "Carnivore"
+            };
+
+            Dog gregor = new Dog();
+
+            Assert.Equal(expectedFood.ToString(), gregor.Food.ToString());
+        }
+
+        [Fact]
+        public void TestingVirtualPropertyFoodWolf()
+        {
+
+            Food expectedFood = new Food
+            {
+                Name = "Red Meat",
+                Type = "Carnivore"
+            };
+
+            Wolf gregor = new Wolf();
+
+            Assert.Equal(expectedFood.ToString(), gregor.Food.ToString());
+        }
+
+        [Fact]
+        public void TestingVirtualPropertyHasVenomSnake()
+        {
+
+            Snake gregor = new Snake();
+
+            Assert.True(gregor.HasVenom);
+        }
+
+        [Fact]
+        public void TestingVirtualPropertyHasVenomCrow()
+        {
+
+            Crow gregor = new Crow();
+
+            Assert.False(gregor.HasVenom);
+        }
+    }
+    }

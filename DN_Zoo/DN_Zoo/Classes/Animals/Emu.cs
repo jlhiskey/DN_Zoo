@@ -22,5 +22,10 @@ namespace DN_Zoo.Classes.Animals
         {
             return $"I am a {SpeciesName}.";
         }
+
+        public override string WhatColorAmI()
+        {
+            return "I am brown";
+        }
     }
 }

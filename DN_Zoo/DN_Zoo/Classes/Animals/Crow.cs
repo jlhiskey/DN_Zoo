@@ -18,11 +18,17 @@ namespace DN_Zoo.Classes.Animals
 
         public override bool Raptor { get; set; } = false;
 
+        public override bool HasVenom { get; set; } = false;
+
         public virtual string AnimalType()
         {
             return $"I am a {SpeciesName}.";
         }
 
+         public override string Sound()
+        {
+            return "Kaw Kaaaa";
+        }
 
     }
 }

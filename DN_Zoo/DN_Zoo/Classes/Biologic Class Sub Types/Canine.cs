@@ -12,7 +12,7 @@ namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
     public abstract class Canine : Mammal, IBite, IEat
     {
         public override bool HasRetractableClaws { get; set; } = false;
-
+        public override object Food { get; set; } = WhatIEat();
         public abstract bool CanBeDomesticated { get; set; }
 
         public static new object WhatIEat()
@@ -24,8 +24,6 @@ namespace DN_Zoo.Classes.Biologic_Class_Sub_Types
             };
             return meat;
         }
-
-        public override object Food { get; set; } = WhatIEat();
         
         public virtual string Bite()
         {
