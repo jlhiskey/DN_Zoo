@@ -11,12 +11,11 @@ namespace DN_Zoo.Classes.Animals
     public class Snake : NonAmphibian
     {
         public override string SpeciesName { get; set; } = "Snake";
-
         public override string AnimalName { get; set; }
-
         public override int Age { get; set; }
-
         public override bool HasLegs { get; set; } = false;
+        public override bool HasVenom { get; set; } = true;
+
 
         public virtual string AnimalType()
         {

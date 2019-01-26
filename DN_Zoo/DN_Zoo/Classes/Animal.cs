@@ -14,6 +14,8 @@ namespace DN_Zoo.Classes
         public abstract string AnimalName { get; set; }
         public abstract int Age { get; set; }
         public abstract string ClassType { get; set; }
+        public virtual object Food { get; set; } = WhatIEat();
+        public virtual bool HasVenom { get; set; }
 
         public static object WhatIEat()
         {
@@ -25,7 +27,9 @@ namespace DN_Zoo.Classes
             return defaultFood;
         }
 
-        public virtual object Food { get; set; } = WhatIEat();
+       
+        
+        
 
         public virtual string AmIAlive()
         {
